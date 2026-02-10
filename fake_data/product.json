@@ -1,0 +1,83 @@
+[
+  {
+    "id": "product-1",
+    "title": "Shadow Blackout Coating",
+    "price": 68.0,
+    "image": "/assets/images/shop/product-1.jpg",
+    "category": "car-accessories",
+    "branding": "pro-series",
+    "promotion": ""
+  },
+  {
+    "id": "product-2",
+    "title": "3500-lb. XL Winch Kit",
+    "price": 68.0,
+    "image": "/assets/images/shop/product-2.jpg",
+    "category": "tools",
+    "branding": "monroe",
+    "promotion": "-32%"
+  },
+  {
+    "id": "product-3",
+    "title": "Stanley Roof Top Universal",
+    "price": 68.0,
+    "image": "/assets/images/shop/product-3.jpg",
+    "category": "car-accessories",
+    "branding": "fram",
+    "promotion": ""
+  },
+  {
+    "id": "product-4",
+    "title": "Wheel/Rim for Passenger & CUV",
+    "price": 68.0,
+    "image": "/assets/images/shop/product-4.jpg",
+    "category": "car-accessories",
+    "branding": "pro-series",
+    "promotion": ""
+  },
+  {
+    "id": "product-5",
+    "title": "MotoMaster Power Inverter",
+    "price": 199.99,
+    "image": "/assets/images/shop/product-5.jpg",
+    "category": "engine-oil",
+    "branding": "penzoil",
+    "promotion": ""
+  },
+  {
+    "id": "product-6",
+    "title": "Dewalt DCGG571M2 18v",
+    "price": 249.0,
+    "image": "/assets/images/shop/product-6.jpg",
+    "category": "tools",
+    "branding": "fram",
+    "promotion": ""
+  },
+  {
+    "id": "product-7",
+    "title": "Maximum 40V MAX Battery",
+    "price": 159.0,
+    "image": "/assets/images/shop/product-7.jpg",
+    "category": "car-battery",
+    "branding": "monroe",
+    "promotion": "-32%"
+  },
+  {
+    "id": "product-8",
+    "title": "MotoMaster 20V Grease Gun",
+    "price": 339.99,
+    "image": "/assets/images/shop/product-8.jpg",
+    "category": "care-care",
+    "branding": "pro-series",
+    "promotion": ""
+  },
+  {
+    "id": "product-9",
+    "title": "Paquete De 2 Llantas 205/70 R16",
+    "price": 5983.0,
+    "image": "/assets/images/shop/product-9.jpg",
+    "category": "breake-system",
+    "branding": "fram",
+    "promotion": ""
+  }
+]
