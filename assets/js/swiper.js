@@ -46,49 +46,6 @@ if (document.querySelector(".page-title--slider-1")) {
     }
 }
 
-// Page Title Slider 2 - Only initialize if element exists
-var swiperMain, swiperThumb;
-if (document.querySelector(".page-title--slider-2")) {
-    var paginationEl = document.querySelector('.pagination-page-title--slider-2');
-    var paginationConfig = paginationEl ? {
-        el: '.pagination-page-title--slider-2',
-        clickable: true,
-    } : {};
-    
-    swiperMain = new Swiper(".page-title--slider-2", {
-        slidesPerView: 1,
-        effect: "fade",
-        fadeEffect: {
-            crossFade: true
-        },
-        pagination: paginationConfig,
-        autoplay: {
-            delay: 3000,
-        },
-        speed: 2000,
-    });
-
-    // Only initialize thumb slider if element exists
-    if (document.querySelector(".page-title--slider-2-thumb")) {
-        swiperThumb = new Swiper(".page-title--slider-2-thumb", {
-            effect: "fade",
-            fadeEffect: {
-                crossFade: true
-            },
-            slidesPerView: 1,
-            allowTouchMove: false,
-            speed: 2000,
-        });
-
-        // Sync 2 slider 2 - Only if both exist
-        if (swiperMain && swiperThumb) {
-            swiperMain.controller.control = swiperThumb;
-            swiperThumb.controller.control = swiperMain;
-        }
-    }
-}
-
-
 var swiper =  new Swiper(".swiper-brand", {
     slidesPerView: 1,
     speed: 800,  
@@ -115,36 +72,6 @@ var swiper =  new Swiper(".swiper-brand", {
         },
         1440: {
             slidesPerView: 9.95,
-        },
-    }
-}); 
- 
-var swiper =  new Swiper(".swiper-brand-top", {
-    loop: true,
-    freemode: true,
-    slidesPerView: 1,
-    allowTouchMove: false,
-    freeModeMomentum: false,
-    speed: 3000, 
-    spaceBetween: 8,
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        400: {
-            slidesPerView: 2,
-        },
-        600: {
-            slidesPerView: 3,
-        },
-        767: {
-            slidesPerView: 4,
-        },
-        991: {
-            slidesPerView: 6,
-        },
-        1280: {
-            slidesPerView: 9,
         },
     }
 }); 
@@ -979,16 +906,20 @@ var swiper =  new Swiper(".swiper-listing-details", {
     }
 }); 
 
-var swiper =  new Swiper(".swiper-listing-details-2", {
+var swiper =  new Swiper(".swiper-listing-details-4", {
     slidesPerView: 1,
     spaceBetween: 20, 
     loop: true,
     navigation: {
-        nextEl: ".swiper-listing-details-next",
-        prevEl: ".swiper-listing-details-prev",
+        nextEl: ".swiper-listing-details-4-next",
+        prevEl: ".swiper-listing-details-4-prev",
     }, 
-    speed: 2000, 
-});
+    pagination: {
+        el: ".swiper-listing-details-4-pagination",
+        clickable: true,
+    },
+    speed: 1000,
+}); 
 
 // Listing Details Main Slider with Thumbnails
 var swiperThumbs = new Swiper(".swiper-listing-details-thumbs", {
@@ -1013,18 +944,7 @@ var pagithumbs2 = new Swiper(".swiper-listing-details-thumbs-style-2", {
         el: ".pagination-swiper-listing-details-main-style-2",
         clickable: true,
     },
-    breakpoints: {
-        375: {
-            slidesPerView: 3,
-            spaceBetween: 16,
-        },
-        500: {
-            slidesPerView: 5,
-        },
-    },
 });
-
-
 
 var swiperMain = new Swiper(".swiper-listing-details-main", {
     spaceBetween: 16,
@@ -1096,59 +1016,6 @@ var swiperThumbsVertical = new Swiper(".product-details-page .swiper-listing-det
     watchSlidesProgress: true,
 });
 
-var swiperMainStyle2 = new Swiper(".swiper-listing-details-main.style-2", {
-    spaceBetween: 0,
-    slidesPerView: 1,
-    loop: false,
-    speed: 500,
-    navigation: {
-        nextEl: ".swiper-listing-details-main.style-2 .swiper-listing-details-main-next",
-        prevEl: ".swiper-listing-details-main.style-2 .swiper-listing-details-main-prev",
-    },
-    thumbs: {
-        swiper: swiperThumbsVertical,
-    },
-});
-
-// Add click handlers for thumbnails
-setTimeout(function() {
-    var thumbSlides = document.querySelectorAll('.swiper-listing-details-thumbs .swiper-slide');
-    thumbSlides.forEach(function(slide, index) {
-        slide.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            var mainSlider = slide.closest('.swiper-listing-details-main.style-2') 
-                ? swiperMainStyle2 
-                : swiperMain;
-            if (mainSlider) {
-                mainSlider.slideTo(index);
-            }
-        });
-    });
-    
-    // Add click handlers for swiper-listing-details-thumbs-style-2
-    if (pagithumbs2 && swiperMain2) {
-        var thumbSlidesStyle2 = document.querySelectorAll('.swiper-listing-details-thumbs-style-2 .swiper-slide');
-        thumbSlidesStyle2.forEach(function(slide, index) {
-            slide.style.cursor = 'pointer';
-            slide.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                // Stop autoplay when clicking thumbnail
-                if (swiperMain2.autoplay && swiperMain2.autoplay.running) {
-                    swiperMain2.autoplay.stop();
-                }
-                // For loop mode, use slideToLoop with the index
-                if (swiperMain2.params.loop) {
-                    swiperMain2.slideToLoop(index);
-                } else {
-                    swiperMain2.slideTo(index);
-                }
-            });
-        });
-    }
-}, 300);  
-
 var swiperListingDetails5Element = document.querySelector(".swiper-listing-details-5");
 if (swiperListingDetails5Element) {
     // Find breadcrumb navigation buttons (specific to listing-details-5)
@@ -1212,58 +1079,6 @@ if (swiperListingDetails5Element) {
         });
     }
 }
-
-// Listing Details 6 - Main Slider with Vertical Thumbnails
-var swiperThumbs6 = new Swiper(".swiper-listing-details-6-thumbs", {
-    spaceBetween: 12,
-    slidesPerView: 4,
-    direction: 'vertical',
-    freeMode: false,
-    watchSlidesProgress: true,
-    breakpoints: {
-        0: {
-            direction: 'horizontal',
-            slidesPerView: 5,
-            spaceBetween: 8,
-        },
-        768: {
-            direction: 'vertical',
-            slidesPerView: 5,
-            spaceBetween: 12,
-        },
-    }
-});
-
-var swiperMain6 = new Swiper(".swiper-listing-details-6-main", {
-    spaceBetween: 0,
-    slidesPerView: 1,
-    loop: false,
-    initialSlide: 1,
-    speed: 500,
-    navigation: {
-        nextEl: ".swiper-listing-details-6-main-next",
-        prevEl: ".swiper-listing-details-6-main-prev",
-    },
-    pagination: {
-        el: ".swiper-listing-details-6-pagination",
-        clickable: true,
-    },
-    thumbs: {
-        swiper: swiperThumbs6,
-    },
-});
-
-// Add click handlers for thumbnails
-setTimeout(function() {
-    var thumbSlides = document.querySelectorAll('.swiper-listing-details-6-thumbs .swiper-slide');
-    thumbSlides.forEach(function(slide, index) {
-        slide.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            swiperMain6.slideTo(index);
-        });
-    });
-}, 200);    
 
 var navConfig = {};
 if (document.querySelector(".swiper-btn.navigation-next") && document.querySelector(".swiper-btn.navigation-prev")) {

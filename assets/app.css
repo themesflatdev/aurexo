@@ -1,46 +1,4 @@
 @charset "UTF-8";
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Reset
 -------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
@@ -48,49 +6,6 @@
 -------------------------------------------------------------- */
 /* Mixin
 -------------------------------------------------------------- */
-/*---------- Reset css styles ----------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 html {
   margin-right: 0 !important;
 }
@@ -365,7 +280,7 @@ a {
 .bg-modal:hover,
 .filter-sidebar__overlay:hover,
 .close-hover:hover {
-  cursor: url("/assets/icons/close-modal.svg") 16 16, auto;
+  cursor: url("./icons/close-modal.svg") 16 16, auto;
 }
 
 .transition3s {
@@ -434,7 +349,7 @@ select {
   background: #fff;
   color: #1C1C1C;
   width: 100%;
-  background-image: url("/assets/icons/chevron-down-black.svg");
+  background-image: url("./icons/chevron-down-black.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
   position: relative;
@@ -468,13 +383,13 @@ select.language-select {
   border-radius: 0;
 }
 select.language-select.language-select--white {
-  background-image: url("/assets/icons/chevron-down-white.svg");
+  background-image: url("./icons/chevron-down-white.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-position-y: calc(50% - 2px);
 }
 select.language-select.language-select--black {
-  background-image: url("/assets/icons/chevron-down-black.svg");
+  background-image: url("./icons/chevron-down-black.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-position-y: calc(50% - 2px);
@@ -619,7 +534,7 @@ input[type=url].time-picker,
 input[type=search].time-picker,
 input[type=tel].time-picker,
 input[type=color].time-picker {
-  background-image: url("/assets/icons/clock.svg");
+  background-image: url("./icons/clock.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
 }
@@ -638,7 +553,7 @@ input[type=url].date-picker,
 input[type=search].date-picker,
 input[type=tel].date-picker,
 input[type=color].date-picker {
-  background-image: url("/assets/icons/calendar.svg");
+  background-image: url("./icons/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
 }
@@ -704,7 +619,7 @@ input[type=color].inp-blur::placeholder {
 
 /* Ẩn mật khẩu */
 .password-input.is-hidden {
-  background-image: url("/assets/icons/eye-slash.svg");
+  background-image: url("./icons/eye-slash.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-size: 20px 20px;
@@ -712,7 +627,7 @@ input[type=color].inp-blur::placeholder {
 
 /* Hiện mật khẩu */
 .password-input.is-visible {
-  background-image: url("/assets/icons/eye.svg");
+  background-image: url("./icons/eye.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-size: 20px 20px;
@@ -912,63 +827,19 @@ button {
   height: 15px;
   top: 2px;
   left: 2px;
-  background-image: url("/assets/icons/checkbox.svg");
+  background-image: url("./icons/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .form-group input:checked + label:before {
-  background-image: url("/assets/icons/checked.svg");
+  background-image: url("./icons/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-/*------------ Components ---------------- */
-/*------------ Themes ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Themes
 -------------------------------------------------------------- */
 .switcher-container .setting {
@@ -1015,6 +886,19 @@ body.is_dark {
   background-color: #1C1C1C;
 }
 
+.is_dark .filter-color-dropdown__option span,
+.is_dark select option {
+  color: #1C1C1C;
+}
+.is_dark .password-input.is-hidden {
+  background-image: url(./icons/eye-slash-dark.svg);
+  background-repeat: no-repeat;
+}
+.is_dark .password-input.is-visible {
+  background-image: url(./icons/eye-dark.svg);
+  background-repeat: no-repeat;
+}
+.is_dark .filter-checkbox span,
 .is_dark .term-page .term-page--nav li a,
 .is_dark .filter-radio-style-2 input[type=radio]:checked + .label-focus span,
 .is_dark .shopping-cart-page .cart-wrapper .cart-item__total .total-price,
@@ -1027,18 +911,28 @@ body.is_dark {
 .is_dark * {
   color: #fff;
 }
+.is_dark .modal .bg-modal {
+  background: rgba(255, 255, 255, 0.2);
+}
+.is_dark .page-title--form .filter-select-dropdown__text span,
 .is_dark .page-title .filter-select-dropdown__text span {
   color: #1C1C1C;
 }
+.is_dark .page-title--form .search-cars__label,
 .is_dark .page-title .search-cars__label {
   color: #4B4B4B;
 }
+.is_dark .page-title--form .select-selected.select--black,
+.is_dark .page-title--form .filter-select-dropdown,
 .is_dark .page-title .select-selected.select--black,
 .is_dark .page-title .filter-select-dropdown {
-  background-image: url(/assets/icons/chevron-down-primary.svg);
+  background-image: url(./icons/chevron-down-primary.svg);
+}
+.is_dark .dashboard-box .filter-checkbox span {
+  color: #1C1C1C;
 }
 .is_dark .search-cars__advanced .form-group input:checked + label:before {
-  background-image: url(/assets/icons/checked.svg);
+  background-image: url(./icons/checked.svg);
 }
 .is_dark .progress-bar .progress-bar__bg {
   background-color: #9FA1A4;
@@ -1077,7 +971,7 @@ body.is_dark {
 }
 .is_dark .filter-radio input[type=radio]:checked + .label-focus::before, .is_dark .filter-radio input[type=radio]:checked + span::before,
 .is_dark .filter-radio-style-2 input[type=radio]:checked + .label-focus::before {
-  background-image: url(/assets/icons/radio2-checked.svg);
+  background-image: url(./icons/radio2-checked.svg);
 }
 .is_dark .dashboard-container .message-date-separator span,
 .is_dark .dashboard-container .message-item__time,
@@ -1123,14 +1017,14 @@ body.is_dark {
 }
 .is_dark .select-selected.select--black,
 .is_dark .filter-select-dropdown {
-  background-image: url(/assets/icons/chevron-down-white.svg);
+  background-image: url(./icons/chevron-down-white.svg);
 }
 .is_dark .listing-topmap .search-cars__label,
 .is_dark .listing-topmap .filter-select-dropdown__text span {
   color: #1C1C1C;
 }
 .is_dark .listing-topmap .filter-select-dropdown {
-  background-image: url(/assets/icons/chevron-down-black.svg);
+  background-image: url(./icons/chevron-down-black.svg);
 }
 .is_dark .pagination-style.swiper-pagination.pagination-dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border-color: #fff;
@@ -1275,7 +1169,7 @@ body.is_dark {
 }
 .is_dark .flat-tabs-style .menu-tab-style6 li span,
 .is_dark .flat-tabs .menu-tab-style6 li span {
-  color: #000000;
+  color: #9FA1A4;
 }
 .is_dark .flat-tabs-style .menu-tab-style6 li.active span, .is_dark .flat-tabs-style .menu-tab-style6 li:hover span,
 .is_dark .flat-tabs .menu-tab-style6 li.active span,
@@ -1317,6 +1211,7 @@ body.is_dark {
 .is_dark .dashboard-container .message-chat__name {
   color: #fff;
 }
+.is_dark .btn-icon-circle,
 .is_dark .dashboard-container .message-container,
 .is_dark .dashboard-container .dashboard-box,
 .is_dark .dashboard-container .dashboard-cart,
@@ -1370,6 +1265,7 @@ body.is_dark {
 .is_dark .product {
   background-color: transparent;
 }
+.is_dark .btn-icon-circle,
 .is_dark .dashboard-container .message-container,
 .is_dark .dashboard-container .dashboard-box,
 .is_dark .dashboard-container .dashboard-cart,
@@ -1447,6 +1343,7 @@ body.is_dark {
 .is_dark #main-nav .sub-menu li a:hover {
   color: #98BC2A;
 }
+.is_dark .modal-right.quick-view .add-to-cart-btn .bth-heart,
 .is_dark .service-box,
 .is_dark .flat-accordion .flat-toggle,
 .is_dark .card-box-style-1 .compare-details,
@@ -1510,6 +1407,9 @@ body.is_dark {
 .is_dark .btn.btn-line-hover:hover svg path {
   fill: #1C1C1C;
 }
+.is_dark .svg-themes path {
+  fill: #fff;
+}
 .is_dark .checkout-container .select-selected {
   background: transparent;
 }
@@ -1521,10 +1421,12 @@ body.is_dark {
 .is_dark .listing-details--sidebar-box select,
 .is_dark .caculator-box #CalculatorInterestRate,
 .is_dark .caculator-box select,
+.is_dark .send-inquiry #CalculatorInterestRate,
+.is_dark .send-inquiry select,
 .is_dark .financing-calculator #CalculatorInterestRate,
 .is_dark .financing-calculator select {
   background: transparent;
-  background-image: url(/assets/icons/chevron-down-white.svg);
+  background-image: url(./icons/chevron-down-white.svg);
   background-repeat: no-repeat;
   background-position: right 14px center;
 }
@@ -1569,6 +1471,8 @@ body.is_dark {
 .is_dark .header-button .btn.btn-primary svg path {
   stroke: #1C1C1C;
 }
+.is_dark .modal-right .ship,
+.is_dark .modal-right.quick-view .add-to-cart-btn .bth-heart,
 .is_dark .flat-accordion .flat-toggle,
 .is_dark .divider {
   background: rgba(255, 255, 255, 0.1);
@@ -1610,14 +1514,14 @@ body.is_dark {
 .is_dark .card-box .content {
   background: rgba(255, 255, 255, 0.1019607843);
 }
+.is_dark .card-box-style-9 .compare-details::after,
+.is_dark .compare-details::after {
+  background-color: #fff;
+}
 .is_dark .card-box-style-9 .compare-details,
 .is_dark .compare-details {
   border-color: #fff;
   color: #fff;
-}
-.is_dark .card-box-style-9 .compare-details::after,
-.is_dark .compare-details::after {
-  background-color: #fff;
 }
 .is_dark .card-box-style-9 .compare-details svg path,
 .is_dark .compare-details svg path {
@@ -1637,6 +1541,11 @@ body.is_dark {
 .is_dark .switcher__title,
 .is_dark .sw-odd h3 {
   color: #1C1C1C;
+}
+.is_dark #main-nav .menu > li.menu-item--static .sub-menu.sub-menu--full.sub-menu--main .menu-item.current-item,
+.is_dark .switcher__title.current-item,
+.is_dark .sw-odd h3.current-item {
+  color: #98BC2A;
 }
 .is_dark .switcher-container h2 {
   background-color: #fff;
@@ -1666,10 +1575,10 @@ body.is_dark {
 .is_dark .form-group input:checked + label:before,
 .is_dark .filter-checkbox input[type=checkbox]:checked + span::before,
 .is_dark .filter-checkbox.style-2 input[type=checkbox]:checked + span::before {
-  background-image: url(/assets/icons/checked-white.svg);
+  background-image: url(./icons/checked-white.svg);
 }
 .is_dark .filter-select-dropdown__menu .filter-checkbox input[type=checkbox]:checked + span::before {
-  background-image: url(/assets/icons/checked.svg);
+  background-image: url(./icons/checked.svg);
 }
 
 .is_light .sw-odd .light_mode {
@@ -1857,49 +1766,6 @@ body.is_dark {
     transform: rotate(360deg);
   }
 }
-/*------------ Button ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Button
 -------------------------------------------------------------- */
 *, ::after, ::before {
@@ -2092,12 +1958,12 @@ body.is_dark {
 .btn.btn-primary::before {
   background: #98BC2A;
 }
-.btn.btn-primary:hover {
-  background: #98BC2A;
-}
 .btn.btn-primary:hover::before {
   width: 100%;
   left: 0;
+}
+.btn.btn-primary:hover {
+  background: #98BC2A;
 }
 .btn.btn-primary-3 {
   background-color: #98BC2A;
@@ -2106,12 +1972,12 @@ body.is_dark {
 .btn.btn-primary-3::before {
   background: #1C1C1C;
 }
-.btn.btn-primary-3:hover {
-  background: #1C1C1C;
-}
 .btn.btn-primary-3:hover::before {
   width: 100%;
   left: 0;
+}
+.btn.btn-primary-3:hover {
+  background: #1C1C1C;
 }
 .btn.btn-primary-4 {
   background-color: #4518CC;
@@ -2290,49 +2156,6 @@ body.is_dark {
   fill: #fff;
 }
 
-/*------------ Menu ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Menu
 -------------------------------------------------------------- */
 /* Mobile Menu */
@@ -2493,6 +2316,14 @@ body.is_dark {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+#main-nav .sub-menu.sub-menu--container {
+  overflow-y: inherit;
+}
+#main-nav .sub-menu:not(.sub-menu--full) li a {
+  min-width: 240px;
+}
+#main-nav .sub-menu {
   position: absolute;
   left: 0;
   width: 100%;
@@ -2512,12 +2343,6 @@ body.is_dark {
   transform: translateY(15px);
   background: #fff;
   box-shadow: 0px 10px 25px 0px rgba(43, 52, 74, 0.1215686275);
-}
-#main-nav .sub-menu.sub-menu--container {
-  overflow-y: inherit;
-}
-#main-nav .sub-menu:not(.sub-menu--full) li a {
-  min-width: 240px;
 }
 #main-nav .sub-menu li {
   margin-right: 0 !important;
@@ -2601,7 +2426,6 @@ body.is_dark {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99;
 }
 #main-nav .menu.right {
   justify-content: flex-end;
@@ -2612,6 +2436,9 @@ body.is_dark {
 }
 #main-nav .menu.style-2 > li > a {
   color: #fff;
+}
+#main-nav .menu {
+  z-index: 99;
 }
 #main-nav .menu > li {
   position: relative;
@@ -2868,17 +2695,17 @@ body.is_dark {
   position: relative;
   z-index: 3;
 }
-#main-nav-mobile .sub-menu .menu-item-inner p {
-  padding-left: 40px;
-  color: #fff;
-  margin-bottom: 12px;
-}
 #main-nav-mobile .sub-menu .menu-item-inner p svg {
   transform: rotate(0);
   margin-right: 20px;
 }
 #main-nav-mobile .sub-menu .menu-item-inner p svg path {
   stroke: #9FA1A4;
+}
+#main-nav-mobile .sub-menu .menu-item-inner p {
+  padding-left: 40px;
+  color: #fff;
+  margin-bottom: 12px;
 }
 #main-nav-mobile .sub-menu .menu-item-inner p.current-item {
   color: #98BC2A;
@@ -2995,49 +2822,6 @@ body.is_dark {
   background: rgba(28, 28, 28, 0.3);
 }
 
-/*------------ Header ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Header
 -------------------------------------------------------------- */
 .header-spacing {
@@ -3099,11 +2883,6 @@ body.is_dark {
   min-height: 94px;
 }
 
-.header {
-  z-index: 100;
-  width: 100%;
-  min-height: 94px;
-}
 .header .header-top-bar--wrapper {
   display: flex;
   justify-content: space-between;
@@ -3146,6 +2925,11 @@ body.is_dark {
   font-size: 14px;
   line-height: 20px;
   text-decoration: underline;
+}
+.header {
+  z-index: 100;
+  width: 100%;
+  min-height: 94px;
 }
 .header.header-absolute {
   position: absolute;
@@ -3470,49 +3254,6 @@ body.is_dark {
   background-color: #1C1C1C;
 }
 
-/*------------ Swiper ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Swiper
 -------------------------------------------------------------- */
 .swiper-slide {
@@ -3649,49 +3390,6 @@ body.is_dark {
   cursor: pointer;
 }
 
-/*------------ Page Title ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Page Title
 -------------------------------------------------------------- */
 .page-title {
@@ -3943,14 +3641,16 @@ body.is_dark {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.page-title-style-1 .page-title--post-list .item:hover {
+  background-color: #fff;
+}
+.page-title-style-1 .page-title--post-list .item {
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.page-title-style-1 .page-title--post-list .item:hover {
-  background-color: #fff;
 }
 .page-title-style-1 .page-title--post-list .item .item-title {
   margin-top: 8px;
@@ -4111,6 +3811,9 @@ body.is_dark {
   color: #1C1C1C;
   padding: 10px;
 }
+.search-cars__filter.style2 {
+  width: 68px;
+}
 .search-cars__filter {
   width: 62px;
   height: 62px;
@@ -4122,9 +3825,6 @@ body.is_dark {
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-.search-cars__filter.style2 {
-  width: 68px;
 }
 .search-cars__filter:hover, .search-cars__filter.active {
   background: #1C1C1C;
@@ -4159,12 +3859,12 @@ body.is_dark {
   z-index: -2;
   background: #1C1C1C;
 }
-.search-cars__search:hover {
-  background: #1C1C1C;
-}
 .search-cars__search:hover::before {
   width: 100%;
   left: 0;
+}
+.search-cars__search:hover {
+  background: #1C1C1C;
 }
 .search-cars__advanced {
   width: 100%;
@@ -4490,13 +4190,6 @@ body.is_dark {
   height: 100px !important;
 }
 
-.swiper-listing-details-main-style-2,
-.swiper-listing-details-main {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 12px;
-}
 .swiper-listing-details-main-style-2.style-2,
 .swiper-listing-details-main.style-2 {
   position: relative;
@@ -4527,6 +4220,13 @@ body.is_dark {
 .swiper-listing-details-main.style-2 .swiper-listing-details-thumbs-2 .swiper-slide,
 .swiper-listing-details-main.style-2 .swiper-listing-details-thumbs .swiper-slide {
   height: 100px !important;
+}
+.swiper-listing-details-main-style-2,
+.swiper-listing-details-main {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
 .swiper-listing-details-main-style-2 .listing-details-item,
 .swiper-listing-details-main .listing-details-item {
@@ -4862,49 +4562,6 @@ body.is_dark {
     left: -100%;
   }
 }
-/*------------ Tabs ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Tabs
 -------------------------------------------------------------- */
 .scroll-element .menu-tab-style5 .item .element {
@@ -5259,7 +4916,6 @@ body.is_dark {
 .flat-tabs-style2 .menu-tab li {
   position: relative;
   cursor: pointer;
-  margin-left: 24px;
 }
 .flat-tabs-style2 .menu-tab li::after {
   position: absolute;
@@ -5278,6 +4934,9 @@ body.is_dark {
 }
 .flat-tabs-style2 .menu-tab li.active::after {
   opacity: 1;
+}
+.flat-tabs-style2 .menu-tab li {
+  margin-left: 24px;
 }
 .flat-tabs-style2 .menu-tab li span {
   -webkit-transition: all 0.3s ease;
@@ -5453,49 +5112,6 @@ body.is_dark {
   stroke: #1C1C1C;
 }
 
-/*------------ Box ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Box
 -------------------------------------------------------------- */
 .compare-details {
@@ -5542,11 +5158,13 @@ body.is_dark {
 }
 .card-box-style-1.active .compare-details, .card-box-style-1:hover .compare-details {
   background-color: #1C1C1C;
-  color: #fff;
 }
 .card-box-style-1.active .compare-details::after, .card-box-style-1:hover .compare-details::after {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+.card-box-style-1.active .compare-details, .card-box-style-1:hover .compare-details {
+  color: #fff;
 }
 .card-box-style-1.active .compare-details svg path, .card-box-style-1:hover .compare-details svg path {
   stroke: #fff;
@@ -5574,14 +5192,14 @@ body.is_dark {
 .card-box-style-2.active .card--img, .card-box-style-2:hover .card--img {
   transform: scale(1.1);
 }
+.card-box-style-2.active .compare-details::after, .card-box-style-2:hover .compare-details::after {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
 .card-box-style-2.active .compare-details, .card-box-style-2:hover .compare-details {
   background-color: #fff;
   color: #1C1C1C;
   padding: 8px 14px;
-}
-.card-box-style-2.active .compare-details::after, .card-box-style-2:hover .compare-details::after {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
 }
 .card-box-style-2.active .compare-details svg path, .card-box-style-2:hover .compare-details svg path {
   stroke: #1C1C1C;
@@ -5751,8 +5369,6 @@ body.is_dark {
 }
 .card-box .content .tag {
   flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
 }
 .card-box .content .tag.style2 {
   justify-content: start;
@@ -5761,6 +5377,10 @@ body.is_dark {
 .card-box .content .tag.style3 {
   justify-content: start;
   gap: 28px;
+}
+.card-box .content .tag {
+  display: flex;
+  justify-content: space-between;
 }
 .card-box .content .tag li {
   display: flex;
@@ -6449,14 +6069,14 @@ body.is_dark {
 .car-box-style-3 .content .list {
   margin-bottom: 32px;
 }
+.car-box-style-3 .content .list li:not(:last-child) {
+  margin-bottom: 8px;
+}
 .car-box-style-3 .content .list li {
   color: #fff;
   display: flex;
   align-items: center;
   gap: 8px;
-}
-.car-box-style-3 .content .list li:not(:last-child) {
-  margin-bottom: 8px;
 }
 
 .car-box-style-4 {
@@ -6481,14 +6101,14 @@ body.is_dark {
 .car-box-style-4 .content .list {
   margin-bottom: 32px;
 }
+.car-box-style-4 .content .list li:not(:last-child) {
+  margin-bottom: 8px;
+}
 .car-box-style-4 .content .list li {
   color: #fff;
   display: flex;
   align-items: center;
   gap: 8px;
-}
-.car-box-style-4 .content .list li:not(:last-child) {
-  margin-bottom: 8px;
 }
 
 .car-box-style-5 {
@@ -6650,6 +6270,9 @@ body.is_dark {
   font-size: 18px;
   font-weight: 500;
 }
+.card-details .card-details--table tr td:not(:last-child) {
+  border-right: 0;
+}
 .card-details .card-details--table tr td {
   font-size: 18px;
   font-weight: 500;
@@ -6658,9 +6281,6 @@ body.is_dark {
   border-spacing: 0;
   width: 38%;
   border: 1px solid #E7E7E7;
-}
-.card-details .card-details--table tr td:not(:last-child) {
-  border-right: 0;
 }
 .card-details .card-details--table tr td:nth-child(1) {
   text-align: left;
@@ -6776,11 +6396,6 @@ body.is_dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 .dealer-box .icon {
   min-width: 40px;
@@ -6819,6 +6434,13 @@ body.is_dark {
 }
 .dealer-box .btn.btn-large {
   padding: 8px 42px;
+}
+.dealer-box {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .dealer-box.active, .dealer-box:hover {
   border-color: #50611D;
@@ -7093,6 +6715,8 @@ body.is_dark {
   border-radius: 16px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .package-box .tag {
   position: absolute;
@@ -7117,6 +6741,9 @@ body.is_dark {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.package-box .btn {
+  margin-top: auto;
 }
 .package-box:hover, .package-box.active {
   box-shadow: inset 0 0 0 2px #50611D;
@@ -7274,7 +6901,6 @@ body.is_dark {
   font-size: 12px;
 }
 
-/*------------ Grid ---------------- */
 /* Grid
 -------------------------------------------------------------- */
 .container,
@@ -8264,49 +7890,6 @@ body.is_dark {
   gap: 48px;
 }
 
-/*------------ Blog ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Blog
 -------------------------------------------------------------- */
 .innerpage-container {
@@ -8799,8 +8382,6 @@ body.is_dark {
 }
 .widget-categories li a {
   padding: 2px 0;
-  display: flex;
-  justify-content: space-between;
 }
 .widget-categories li a .label,
 .widget-categories li a span {
@@ -8828,6 +8409,10 @@ body.is_dark {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.widget-categories li a {
+  display: flex;
+  justify-content: space-between;
+}
 .widget-categories li a.active span,
 .widget-categories li a.active .label, .widget-categories li a:hover span,
 .widget-categories li a:hover .label {
@@ -8843,6 +8428,10 @@ body.is_dark {
   flex-wrap: wrap;
   gap: 8px;
 }
+.widget-tags li a:hover, .widget-tags li a.active {
+  background-color: #1C1C1C;
+  color: #fff;
+}
 .widget-tags li a {
   border-radius: 8px;
   border: 1px solid #E7E7E7;
@@ -8850,10 +8439,6 @@ body.is_dark {
   line-height: 22px;
   color: #4B4B4B;
   padding: 4px 15px;
-}
-.widget-tags li a:hover, .widget-tags li a.active {
-  background-color: #1C1C1C;
-  color: #fff;
 }
 
 .blog-details-banner {
@@ -9037,49 +8622,6 @@ body.is_dark {
   border-right: 1px solid #E7E7E7;
 }
 
-/*------------ Footer ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Footer
 -------------------------------------------------------------- */
 .footer {
@@ -9165,56 +8707,13 @@ body.is_dark {
 .footer .form-footer .btn-submit svg path {
   transition: all 0.3s ease;
 }
-.footer .form-footer .btn-submit:hover {
-  background-color: #98BC2A;
-}
 .footer .form-footer .btn-submit:hover svg path {
   fill: #fff;
 }
+.footer .form-footer .btn-submit:hover {
+  background-color: #98BC2A;
+}
 
-/*------------ Widget ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Widget
 -------------------------------------------------------------- */
 .widget-links li:not(:last-child) {
@@ -9309,49 +8808,6 @@ body.is_dark {
   top: 13px;
 }
 
-/*------------ Spacing ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Spacing
 -------------------------------------------------------------- */
 .ml-60 {
@@ -9715,49 +9171,6 @@ body.is_dark {
   padding: 0 28px;
 }
 
-/*------------ Section ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Section
 -------------------------------------------------------------- */
 .section-video {
@@ -9862,7 +9275,7 @@ body.is_dark {
 .search-cars__select-zip-code .filter-select-dropdown {
   box-shadow: 0 0 0 1px #E7E7E7;
   padding: 20px 26px 0 14px;
-  background-image: url(/assets/icons/chevron-down-black.svg);
+  background-image: url(./icons/chevron-down-black.svg);
   background-repeat: no-repeat;
   background-position: right 100px center;
 }
@@ -10066,11 +9479,6 @@ body.is_dark {
   min-width: 38px;
 }
 
-.comment-box {
-  padding-bottom: 19px;
-  border-bottom: 1px solid #E7E7E7;
-  margin-bottom: 28px;
-}
 .comment-box.border-none {
   border-bottom: none;
 }
@@ -10108,6 +9516,11 @@ body.is_dark {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
+}
+.comment-box {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 28px;
 }
 
 .add-review-form textarea {
@@ -10254,49 +9667,6 @@ body.is_dark {
   max-width: 850px;
 }
 
-/*------------ Modal ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Modal
 -------------------------------------------------------------- */
 .modal {
@@ -10699,7 +10069,6 @@ body.is_dark {
   margin-top: -24px;
   position: sticky;
   top: 0;
-  background-color: #fff;
   padding-top: 28px;
   padding-bottom: 12px;
   z-index: 10;
@@ -10707,8 +10076,9 @@ body.is_dark {
 .modal-right.quick-view .product-info .inner-content {
   padding-top: 12px;
   position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 90px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
 }
 .modal-right.quick-view .product-images {
   width: 340px;
@@ -10917,92 +10287,6 @@ body.is_dark {
   height: 24px;
 }
 
-/*------------ Progress ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
-/*------------ Breadcrumb ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Breadcrumb
 -------------------------------------------------------------- */
 .breadcrumb {
@@ -11027,49 +10311,6 @@ body.is_dark {
   padding: 0;
 }
 
-/*------------ Dropdown ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Dropdown
 -------------------------------------------------------------- */
 .core-dropdown {
@@ -11239,49 +10480,6 @@ body.is_dark {
   color: #98BC2A;
 }
 
-/*------------ Sidebar ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Filter Sidebar
 -------------------------------------------------------------- */
 .filter-sidebar {
@@ -11519,13 +10717,13 @@ body.is_dark {
   cursor: pointer;
 }
 .filter-checkbox input[type=checkbox]:checked + span::before {
-  background-image: url("/assets/icons/checked-2.svg");
+  background-image: url("./icons/checked-2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .filter-checkbox.style-2 input[type=checkbox]:checked + span::before {
-  background-image: url("/assets/icons/checked.svg");
+  background-image: url("./icons/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11580,7 +10778,7 @@ body.is_dark {
   top: 3px;
   width: 15px;
   height: 15px;
-  background-image: url("/assets/icons/checkbox-2.svg");
+  background-image: url("./icons/checkbox-2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11610,7 +10808,7 @@ body.is_dark {
 }
 .filter-radio input[type=radio]:checked + .label-focus::before, .filter-radio input[type=radio]:checked + span::before {
   border-color: #000000;
-  background-image: url("/assets/icons/radio-checked.svg");
+  background-image: url("./icons/radio-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11637,7 +10835,7 @@ body.is_dark {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("/assets/icons/radio.svg");
+  background-image: url("./icons/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11661,7 +10859,7 @@ body.is_dark {
 }
 .filter-radio-style-2 input[type=radio]:checked + .label-focus::before {
   border-color: #000000;
-  background-image: url("/assets/icons/radio-checked.svg");
+  background-image: url("./icons/radio-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11691,7 +10889,7 @@ body.is_dark {
   top: 5.5px;
   width: 16px;
   height: 16px;
-  background-image: url("/assets/icons/radio.svg");
+  background-image: url("./icons/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11711,7 +10909,7 @@ body.is_dark {
 }
 .filter-radio-style-3 input[type=radio]:checked + .label-focus::before {
   border-color: #000000;
-  background-image: url("/assets/icons/radio2-checked.svg");
+  background-image: url("./icons/radio2-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11739,7 +10937,7 @@ body.is_dark {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  background-image: url("/assets/icons/radio2.svg");
+  background-image: url("./icons/radio2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -12009,7 +11207,7 @@ body.is_dark {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-image: url(/assets/icons/chevron-down-black.svg);
+  background-image: url(./icons/chevron-down-black.svg);
   background-repeat: no-repeat;
   background-position: right 14px center;
   box-shadow: inset 0 0 0 2px transparent;
@@ -12148,7 +11346,6 @@ body.is_dark {
   border-bottom: none;
 }
 
-/*------------ Animate ---------------- */
 /* Animate
 -------------------------------------------------------------- */
 /*!
@@ -14993,49 +14190,6 @@ xpush
   object-fit: cover;
 }
 
-/*------------ Pagination ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Pagination
 -------------------------------------------------------------- */
 .pagination {
@@ -15062,49 +14216,6 @@ xpush
   fill: #fff;
 }
 
-/*------------ Accordion ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Accordion
 -------------------------------------------------------------- */
 .flat-accordion.style-2 .flat-toggle {
@@ -15166,49 +14277,6 @@ xpush
   transition: all 0.3s ease;
 }
 
-/*------------ Shop ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .product {
   background-color: #fff;
   border-radius: 20px;
@@ -15333,49 +14401,6 @@ xpush
   background-color: #1C1C1C;
 }
 
-/*------------ Select ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Select
 -------------------------------------------------------------- */
 .custom-select {
@@ -15399,13 +14424,13 @@ xpush
   box-shadow: 0 0 0 2px #50611D;
 }
 .select-selected.select--white {
-  background-image: url("/assets/icons/chevron-down-white.svg");
+  background-image: url("./icons/chevron-down-white.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-position-y: calc(50% - 2px);
 }
 .select-selected.select--black {
-  background-image: url("/assets/icons/chevron-down-black.svg");
+  background-image: url("./icons/chevron-down-black.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-position-y: calc(50% - 2px);
@@ -15437,49 +14462,6 @@ xpush
   background: #f0f0f0;
 }
 
-/*------------ Inner Page ---------------- */
-/* ---------------------------------------------------------
-    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * Themes
-        * Button
-        * Menu
-        * Header
-        * Swiper
-        * Page Title
-        * Tabs
-        * Box
-        * Grid
-        * Blog
-        * Footer
-        * Widget
-        * Spacing
-        * Section
-        * Modal
-        * Progress
-        * Breadcrumb
-        * Dropdown
-        * Sidebar
-        * Animate
-        * Pagination
-        * Accordion
-        * Shop
-        * Select
-
-    * Inner Page
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 /* Inner Page
 -------------------------------------------------------------- */
 .listing-sidebar-right {
@@ -16219,14 +15201,14 @@ xpush
   background-color: #fff;
   bottom: -4px;
 }
-.dashboard-container .cart-item .action:hover {
-  background-color: #1C1C1C;
-  box-shadow: inset 0 0 0 2px #1C1C1C;
-}
 .dashboard-container .cart-item .action:hover .tooltip {
   top: -40px;
   opacity: 1;
   visibility: visible;
+}
+.dashboard-container .cart-item .action:hover {
+  background-color: #1C1C1C;
+  box-shadow: inset 0 0 0 2px #1C1C1C;
 }
 .dashboard-container .dashboard-box {
   border-radius: 20px;
@@ -16318,13 +15300,13 @@ xpush
   justify-content: center;
   box-shadow: 0 0 0 2px #E7E7E7;
 }
+.dashboard-container .comments.style2 .comment-box .core-dropdown.more:hover .core-dropdown__button svg path, .dashboard-container .comments.style2 .comment-box .core-dropdown.more.active .core-dropdown__button svg path {
+  stroke: #fff;
+}
 .dashboard-container .comments.style2 .comment-box .core-dropdown.more:hover .core-dropdown__button, .dashboard-container .comments.style2 .comment-box .core-dropdown.more.active .core-dropdown__button {
   color: #fff;
   background-color: #1C1C1C;
   box-shadow: 0 0 0 2px #1C1C1C;
-}
-.dashboard-container .comments.style2 .comment-box .core-dropdown.more:hover .core-dropdown__button svg path, .dashboard-container .comments.style2 .comment-box .core-dropdown.more.active .core-dropdown__button svg path {
-  stroke: #fff;
 }
 .dashboard-container .dashboard-content--inner {
   flex: auto;
@@ -17114,7 +16096,6 @@ xpush
   color: #909090;
 }
 
-/*-------------- Responsive ----------------- */
 /* Responsive
 -------------------------------------------------------------- */
 @media (max-width: 1700px) {
@@ -19548,11 +18529,22 @@ html.fake-overflow-primary::before {
   right: 12px;
   width: 24px;
   height: 24px;
-  background-color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 9;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.map-listing-item .inner-box .infoBox-close img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.map-listing-item .inner-box .infoBox-close:hover {
+  opacity: 0.8;
 }
 
 .map-listing-item img {
@@ -19596,6 +18588,8 @@ html.fake-overflow-primary::before {
   border: none;
   width: 100%;
   min-height: 400px;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

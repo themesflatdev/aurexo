@@ -16,13 +16,16 @@
           "" +
           '<div class="map-listing-item">' +
           '<div class="inner-box">' +
+          '<button class="infoBox-close map-listing-item-close" type="button" aria-label="Close">' +
+          '<img src="./assets/icons/close-modal.svg" alt="close">' +
+          '</button>' +
           '<div class="image-box">' +
           '<img src="' +
           locationImg +
           '" alt="">' +
           "</div>" +
           '<div class="content">' + 
-          '<h5 class="mb-8 font-weight-600"><a href=' +        
+          '<h5 class="mb-8 font-weight-600"><a class="text-primary" href=' +        
           locationURL +
           '">' +
           locationTitle +
@@ -38,7 +41,7 @@
           '<p class="location">' + '<img src="./assets/icons/gaspump.svg" alt="gaspump">' +
           locationTopCity3 +
           "</p>" +
-          "<a class='view-details' href='" + locationURL + "'>View details <img src='./assets/icons/CaretCircleRight.svg' alt='CaretCircleRight'></a>"   +
+          "<a class='view-details text-primary' href='" + locationURL + "'>View details <img class='mt-2' src='./assets/icons/CaretCircleRight.svg' alt='CaretCircleRight'></a>"   +
           "</div>" +
           "</div>" +
           "</div>"

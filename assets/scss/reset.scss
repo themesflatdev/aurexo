@@ -285,7 +285,7 @@ a {
 .filter-sidebar__overlay,
 .close-hover {
     &:hover {
-        cursor: url("/assets/icons/close-modal.svg") 16 16, auto;
+        cursor: url("./icons/close-modal.svg") 16 16, auto;
     }
 }
 
@@ -346,7 +346,7 @@ select {
     background: $white;
     color: $text-primary;
     width: 100%;
-    background-image: url("/assets/icons/chevron-down-black.svg");
+    background-image: url("./icons/chevron-down-black.svg");
     background-repeat: no-repeat;
     background-position: right 14px center;
     position: relative;
@@ -384,14 +384,14 @@ select {
         border-radius: 0;
 
         &.language-select--white {
-            background-image: url("/assets/icons/chevron-down-white.svg");
+            background-image: url("./icons/chevron-down-white.svg");
             background-repeat: no-repeat;
             background-position: right center;
             background-position-y: calc(50% - 2px); 
         }
 
         &.language-select--black {
-            background-image: url("/assets/icons/chevron-down-black.svg");
+            background-image: url("./icons/chevron-down-black.svg");
             background-repeat: no-repeat;
             background-position: right center;
             background-position-y: calc(50% - 2px); 
@@ -455,13 +455,13 @@ input[type="color"] {
     }
 
     &.time-picker {
-        background-image: url("/assets/icons/clock.svg");
+        background-image: url("./icons/clock.svg");
         background-repeat: no-repeat;
         background-position: right 14px center;
     }
 
     &.date-picker {
-        background-image: url("/assets/icons/calendar.svg");
+        background-image: url("./icons/calendar.svg");
         background-repeat: no-repeat;
         background-position: right 14px center;
     } 
@@ -487,7 +487,7 @@ input[type="color"] {
 }
 /* Ẩn mật khẩu */
 .password-input.is-hidden {
-    background-image: url("/assets/icons/eye-slash.svg");
+    background-image: url("./icons/eye-slash.svg");
     background-repeat: no-repeat;
     background-position: right 14px center;
     background-size: 20px 20px;
@@ -495,7 +495,7 @@ input[type="color"] {
 
 /* Hiện mật khẩu */
 .password-input.is-visible {
-    background-image: url("/assets/icons/eye.svg");
+    background-image: url("./icons/eye.svg");
     background-repeat: no-repeat;
     background-position: right 14px center;
     background-size: 20px 20px;
@@ -714,14 +714,14 @@ button {
     height: 15px;
     top: 2px;
     left: 2px;
-    background-image: url("/assets/icons/checkbox.svg");
+    background-image: url("./icons/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .form-group input:checked + label:before { 
-    background-image: url("/assets/icons/checked.svg");
+    background-image: url("./icons/checked.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

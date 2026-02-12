@@ -712,36 +712,142 @@
 					<div class="search-cars__advanced" id="advancedFilters">
 						<div class="search-cars__advanced-content">
 							<div class="search-cars__advanced-row">
-								<select class="search-cars__select-advanced" name="fuel-type">
-									<option>Fuel Type</option>
-									<option>Petrol</option>
-									<option>Diesel</option>
-									<option>Electric</option>
-								</select>
-								<select class="search-cars__select-advanced" name="transmission">
-									<option>Transmission</option>
-									<option>Manual</option>
-									<option>Automatic</option>
-								</select>
-								<select class="search-cars__select-advanced" name="drive-type">
-									<option>Drive Type</option>
-									<option>FWD</option>
-									<option>RWD</option>
-									<option>AWD</option>
-								</select>
-								<select class="search-cars__select-advanced" name="color">
-									<option>Color</option>
-									<option>Red</option>
-									<option>Blue</option>
-									<option>Black</option>
-								</select>
-	
-								<select class="search-cars__select-advanced" name="cylinders">
-									<option>Cylinders</option>
-									<option>4</option>
-									<option>6</option>
-									<option>8</option>
-								</select>
+								<div class="search-cars__select-wrapper">
+									<div class="bg-white filter-select-dropdown style2" data-name="fuel-type">
+										<input type="checkbox" id="fuel-type" class="filter-select-dropdown__toggle">
+										<label for="fuel-type" class="filter-select-dropdown__text">
+											<span>All Price</span>
+										</label>
+										<div class="filter-select-dropdown__menu"> 
+											<div class="filter-select-dropdown__list"> 
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Fuel" checked>
+													<span>Fuel Type</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Petrol">
+													<span>Petrol</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Diesel">
+													<span>Diesel</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Electric">
+													<span>Electric</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>   
+
+								<div class="search-cars__select-wrapper">
+									<div class="bg-white filter-select-dropdown style2" data-name="Transmission">
+										<input type="checkbox" id="Transmission" class="filter-select-dropdown__toggle">
+										<label for="Transmission" class="filter-select-dropdown__text">
+											<span>Transmission</span>
+										</label>
+										<div class="filter-select-dropdown__menu"> 
+											<div class="filter-select-dropdown__list"> 
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Transmission">
+													<span>Transmission</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Manual">
+													<span>Manual</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="Automatic">
+													<span>Automatic</span>
+												</label> 
+											</div>
+										</div>
+									</div>
+								</div>    
+
+								<div class="search-cars__select-wrapper">
+									<div class="bg-white filter-select-dropdown style2" data-name="DriveType">
+										<input type="checkbox" id="DriveType" class="filter-select-dropdown__toggle">
+										<label for="DriveType" class="filter-select-dropdown__text">
+											<span>Drive Type</span>
+										</label>
+										<div class="filter-select-dropdown__menu"> 
+											<div class="filter-select-dropdown__list"> 
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="FWD" checked>
+													<span>FWD</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="RWD">
+													<span>RWD</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="model" value="AWD">
+													<span>AWD</span>
+												</label> 
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="search-cars__select-wrapper">
+									<div class="bg-white filter-select-dropdown style2" data-name="colorTyle">
+										<input type="checkbox" id="colorTyle" class="filter-select-dropdown__toggle">
+										<label for="colorTyle" class="filter-select-dropdown__text">
+											<span>Color</span>
+										</label>
+										<div class="filter-select-dropdown__menu"> 
+											<div class="filter-select-dropdown__list"> 
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="Color" checked>
+													<span>Color</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="Red">
+													<span>Red</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="Blue">
+													<span>Blue</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="Black">
+													<span>Black</span>
+												</label> 
+											</div>
+										</div>
+									</div>
+								</div>  
+
+								<div class="search-cars__select-wrapper">
+									<div class="bg-white filter-select-dropdown style2" data-name="Cylinders">
+										<input type="checkbox" id="Cylinders" class="filter-select-dropdown__toggle">
+										<label for="Cylinders" class="filter-select-dropdown__text">
+											<span>Cylinders</span>
+										</label>
+										<div class="filter-select-dropdown__menu"> 
+											<div class="filter-select-dropdown__list"> 
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="Color" checked>
+													<span>Cylinders</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="4">
+													<span>4</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="3">
+													<span>3</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" name="colorTyle" value="2">
+													<span>2</span>
+												</label> 
+											</div>
+										</div>
+									</div>
+								</div>   
 								<div class="search-cars__range">
 									<p class="search-cars__range-label">
 										Year: <span id="yearMin">2015</span> - <span id="yearMax">2026</span>
@@ -3581,7 +3687,7 @@
 		<section class="py-100 relative">
 			<div class="overlay-parallax"></div>
 			<div class="overlay image">
-				<img class="lazyload parallax" data-src="images/background/bg-fixed.jpg" src="/assets/images/background/bg-fixed.jpg" alt="">
+				<img class="lazyload parallax" data-src="images/background/bg-fixed.jpg" src="./assets/images/background/bg-fixed.jpg" alt="">
 			</div>
 			<div class="container flex items-center justify-center flex-col relative text-center index-2 wow fadeIn" data-wow-delay="0.1s"> 
 				<h2 class="text-white mb-40 capitalize">Browse by Type</h2>
@@ -4655,7 +4761,7 @@
 		<div class="bg-modal"></div>
 		<div class="modal-content">
 			<button class="close-modal">
-				<img src="/assets/icons/close-modal.svg" alt="close-modal">
+				<img src="./assets/icons/close-modal.svg" alt="close-modal">
 			</button>
 			<div class="modal-container">
 				<div class="modal-inner">
@@ -4664,11 +4770,11 @@
 							<div class="w-24"></div>
 							<div class="w-76 grid grid-cols-2 gap-60">
 								<div>
-									<img class="mb-10 radius-16" src="/assets/images/card/card-50.jpg" alt="">
+									<img class="mb-10 radius-16" src="./assets/images/card/card-50.jpg" alt="">
 									<p class="h4 text-center">Audi A6 Avant E-Tron</p>
 								</div>
 								<div>
-									<img class="mb-10 radius-16" src="/assets/images/card/card-51.jpg" alt="">
+									<img class="mb-10 radius-16" src="./assets/images/card/card-51.jpg" alt="">
 									<p class="h4 text-center">2024 Hyundai Elantra</p>
 								</div>
 							</div>
@@ -4678,7 +4784,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/mileage.svg" alt="mileage">
+										<img src="./assets/icons/mileage.svg" alt="mileage">
 										<span>Mileage:</span>
 									</div>
 								</td>
@@ -4688,7 +4794,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/years.svg" alt="mileage">
+										<img src="./assets/icons/years.svg" alt="mileage">
 										<span>Years:</span>
 									</div>
 								</td>
@@ -4698,7 +4804,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/fuel.svg" alt="mileage">
+										<img src="./assets/icons/fuel.svg" alt="mileage">
 										<span>Fuel:</span>
 									</div>
 								</td>
@@ -4708,7 +4814,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/color.svg" alt="mileage">
+										<img src="./assets/icons/color.svg" alt="mileage">
 										<span>Color:</span>
 									</div>
 								</td>
@@ -4718,7 +4824,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/location.svg" alt="mileage">
+										<img src="./assets/icons/location.svg" alt="mileage">
 										<span>Location:</span>
 									</div>
 								</td>
@@ -4729,7 +4835,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/interior.svg" alt="mileage">
+										<img src="./assets/icons/interior.svg" alt="mileage">
 										<span>Interior:</span>
 									</div>
 								</td>
@@ -4740,7 +4846,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/engine.svg" alt="mileage">
+										<img src="./assets/icons/engine.svg" alt="mileage">
 										<span>Engine:</span>
 									</div>
 								</td>
@@ -4750,7 +4856,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/transmission.svg" alt="mileage">
+										<img src="./assets/icons/transmission.svg" alt="mileage">
 										<span>Transmission:</span>
 									</div>
 								</td>
@@ -4760,7 +4866,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8 ">
-										<img src="/assets/icons/VIN.svg" alt="mileage">
+										<img src="./assets/icons/VIN.svg" alt="mileage">
 										<span>VIN:</span>
 									</div>
 								</td>
@@ -4770,7 +4876,7 @@
 							<tr>
 								<td>
 									<div class="flex items-center gap-8">
-										<img src="/assets/icons/QrCode.svg" alt="mileage">
+										<img src="./assets/icons/QrCode.svg" alt="mileage">
 										<span>Stock Number:</span>
 									</div>
 								</td>
@@ -4790,7 +4896,7 @@
 		<div class="bg-modal"></div>
 		<div class="modal-content modal-sm">
 			<button class="close-modal">
-				<img src="/assets/icons/close-modal.svg" alt="close-modal">
+				<img src="./assets/icons/close-modal.svg" alt="close-modal">
 			</button>
 			<div class="modal-container">
 				<div class="modal-inner">
@@ -4838,7 +4944,7 @@
 		<div class="bg-modal"></div>
 		<div class="modal-content modal-sm">
 			<button class="close-modal">
-				<img src="/assets/icons/close-modal.svg" alt="close-modal">
+				<img src="./assets/icons/close-modal.svg" alt="close-modal">
 			</button>
 			<div class="modal-container">
 				<div class="modal-inner">
@@ -4894,7 +5000,7 @@
 		<div class="bg-modal"></div>
 		<div class="modal-content modal-sm">
 			<button class="close-modal">
-				<img src="/assets/icons/close-modal.svg" alt="close-modal">
+				<img src="./assets/icons/close-modal.svg" alt="close-modal">
 			</button>
 			<div class="modal-container">
 				<div class="modal-inner">
@@ -4936,17 +5042,17 @@
 
 						<div class="flex flex-col gap-12 social-login">
 							<a href="/dashboard.html" class="font-weight-500 flex items-center gap-8">
-								<img src="/assets/icons/facebook.svg" alt="google">
+								<img src="./assets/icons/facebook.svg" alt="google">
 								Facebook
 							</a>
 
 							<a href="/dashboard.html" class="font-weight-500 flex items-center gap-8">
-								<img src="/assets/icons/Google.svg" alt="google">
+								<img src="./assets/icons/Google.svg" alt="google">
 								Google
 							</a>
 
 							<a href="/dashboard.html" class="font-weight-500 flex items-center gap-8">
-								<img src="/assets/icons/Twitter.svg" alt="google">
+								<img src="./assets/icons/Twitter.svg" alt="google">
 								X
 							</a>
 						</div>
@@ -4973,7 +5079,7 @@
 							<div class="compare-item-list">
 								<div class="compare-item flex items-center gap-12">
 									<button class="compare-item-remove" type="button" aria-label="Remove item">
-										<img src="/assets/icons/close-modal.svg" alt="car" class="radius-50">
+										<img src="./assets/icons/close-modal.svg" alt="car" class="radius-50">
 									</button>
 									<div class="compare-item-image">
 										<img src="./assets/images/card/card-3.jpg" alt="car" class="radius-50">
@@ -5003,7 +5109,7 @@
 	
 								<div class="compare-item flex items-center gap-12">
 									<button class="compare-item-remove" type="button" aria-label="Remove item">
-										<img src="/assets/icons/close-modal.svg" alt="car" class="radius-50">
+										<img src="./assets/icons/close-modal.svg" alt="car" class="radius-50">
 									</button>
 									<div class="compare-item-image">
 										<img src="./assets/images/card/card-4.jpg" alt="car" class="radius-50">
@@ -5032,7 +5138,7 @@
 								</div>
 								<div class="compare-item flex items-center gap-12">
 									<button class="compare-item-remove" type="button" aria-label="Remove item">
-										<img src="/assets/icons/close-modal.svg" alt="car" class="radius-50">
+										<img src="./assets/icons/close-modal.svg" alt="car" class="radius-50">
 									</button>
 									<div class="compare-item-image">
 										<img src="./assets/images/card/card-4.jpg" alt="car" class="radius-50">

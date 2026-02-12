@@ -467,7 +467,6 @@
                 margin-top: -24px;
                 position: sticky;
                 top: 0;
-                background-color: $white;
                 padding-top: 28px;
                 padding-bottom: 12px;
                 z-index: 10;
@@ -477,8 +476,9 @@
             .inner-content {
                 padding-top: 12px;
                 position: sticky;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 90px;
+                max-height: calc(100vh - 90px);
+                overflow-y: auto;
             }
         }
     

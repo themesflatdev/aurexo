@@ -105,7 +105,6 @@ var switchColor = {
 var switchAnimate = {
   loadEvent: function () {
     $(".switcher-container h2 a.sw-click").on("click", function (e) {
-      console.log("click");
       var t = $(".switcher-container");
 
       if (t.css("right") === "-290px") {

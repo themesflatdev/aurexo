@@ -1,12 +1,15 @@
+# SCSS
+compile SCSS to CSS, install SASS:
 
-### SCSS
-
-# Settings SASS 
+# Install SASS 
 npm install -g sass
 
-Compile SCSS:
+#Compile SCSS:
 sass assets/scss/app.scss:assets/app.css
 
-# Developer mode
+# Developer mode (auto compile on changes)
 sass --watch assets/scss/app.scss:assets/app.css
+OR
+sass --no-source-map --watch assets/scss/app.scss:assets/app.css
+
  

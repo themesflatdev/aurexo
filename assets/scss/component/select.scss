@@ -23,14 +23,14 @@
     }
 
     &.select--white {
-        background-image: url("/assets/icons/chevron-down-white.svg");
+        background-image: url("./icons/chevron-down-white.svg");
         background-repeat: no-repeat;
         background-position: right 14px center;
         background-position-y: calc(50% - 2px); 
     }
 
     &.select--black {
-        background-image: url("/assets/icons/chevron-down-black.svg");
+        background-image: url("./icons/chevron-down-black.svg");
         background-repeat: no-repeat;
         background-position: right 14px center;
         background-position-y: calc(50% - 2px); 

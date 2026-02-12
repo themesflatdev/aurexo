@@ -55,6 +55,22 @@ body.is_dark {
 
 .is_dark { 
 
+    .filter-color-dropdown__option span,
+    select option {
+        color: $color-primary;
+    }
+
+    .password-input.is-hidden {
+        background-image: url(./icons/eye-slash-dark.svg);
+        background-repeat: no-repeat;
+    }
+
+    .password-input.is-visible {
+        background-image: url(./icons/eye-dark.svg);
+        background-repeat: no-repeat;
+    }
+
+    .filter-checkbox span,
     .term-page .term-page--nav li a,
     .filter-radio-style-2 input[type=radio]:checked + .label-focus span,
     .shopping-cart-page .cart-wrapper .cart-item__total .total-price,
@@ -66,8 +82,13 @@ body.is_dark {
     #SearchModal .search-modal__title,
     * { 
         color: $white;
+    } 
+
+    .modal .bg-modal {
+        background: rgba(255, 255, 255, 0.2);
     }
 
+    .page-title--form,
     .page-title {
         .filter-select-dropdown__text span {
             color: $color-primary;
@@ -79,12 +100,18 @@ body.is_dark {
 
         .select-selected.select--black, 
         .filter-select-dropdown {
-            background-image: url(/assets/icons/chevron-down-primary.svg);
+            background-image: url(./icons/chevron-down-primary.svg);
+        }
+    }
+
+    .dashboard-box {
+        .filter-checkbox span {
+            color: $color-primary;
         }
     }
 
     .search-cars__advanced .form-group input:checked + label:before {
-        background-image: url(/assets/icons/checked.svg);
+        background-image: url(./icons/checked.svg);
     }
     
     .progress-bar .progress-bar__bg {
@@ -137,7 +164,7 @@ body.is_dark {
 
     .filter-radio input[type=radio]:checked + .label-focus::before, .filter-radio input[type=radio]:checked + span::before,
     .filter-radio-style-2 input[type=radio]:checked + .label-focus::before {
-        background-image: url(/assets/icons/radio2-checked.svg);
+        background-image: url(./icons/radio2-checked.svg);
     }
 
     .dashboard-container .message-date-separator span,
@@ -202,7 +229,7 @@ body.is_dark {
 
     .select-selected.select--black,
     .filter-select-dropdown {
-        background-image: url(/assets/icons/chevron-down-white.svg);
+        background-image: url(./icons/chevron-down-white.svg);
     }
 
     .listing-topmap {
@@ -212,7 +239,7 @@ body.is_dark {
         }
 
         .filter-select-dropdown {
-            background-image: url(/assets/icons/chevron-down-black.svg);
+            background-image: url(./icons/chevron-down-black.svg);
         }
     }
 
@@ -311,7 +338,6 @@ body.is_dark {
             fill: $white;
         }
     }
-    
 
     .btn.btn-line {
         color: $white;
@@ -361,7 +387,7 @@ body.is_dark {
             background-color: $color-hover;
         }
     }
-
+ 
     .dashboard-container .message-contact__time,
     .widget-tags li a {
         color: #9FA1A4;
@@ -424,7 +450,7 @@ body.is_dark {
     .flat-tabs-style .menu-tab-style6 li,
     .flat-tabs .menu-tab-style6 li {
         span {
-            color: #000000;
+            color: $color-muted;
         }
 
         &.active,
@@ -476,13 +502,12 @@ body.is_dark {
         }
     }
 
-    
-
     .dashboard-container .message-contact__name,
     .dashboard-container .message-chat__name {
         color: $white;
     }
 
+    .btn-icon-circle,
     .dashboard-container .message-container,
     .dashboard-container .dashboard-box,
     .dashboard-container .dashboard-cart,
@@ -552,6 +577,7 @@ body.is_dark {
         background-color: transparent;
     }
 
+    .btn-icon-circle,
     .dashboard-container .message-container,
     .dashboard-container .dashboard-box,
     .dashboard-container .dashboard-cart,
@@ -654,6 +680,7 @@ body.is_dark {
         }
     }
 
+    .modal-right.quick-view .add-to-cart-btn .bth-heart,
     .service-box,
     .flat-accordion .flat-toggle,
     .card-box-style-1 .compare-details,
@@ -732,6 +759,9 @@ body.is_dark {
         }
     }
 
+    .svg-themes path {
+        fill: $white;
+    }
 
     .checkout-container .select-selected {
         background: transparent;
@@ -741,11 +771,12 @@ body.is_dark {
     .calculate-form,
     .listing-details--sidebar-box,
     .caculator-box,
+    .send-inquiry,
     .financing-calculator {
         #CalculatorInterestRate,
         select {
             background: transparent;
-            background-image: url(/assets/icons/chevron-down-white.svg);
+            background-image: url(./icons/chevron-down-white.svg);
             background-repeat: no-repeat;
             background-position: right 14px center;
         }
@@ -801,6 +832,8 @@ body.is_dark {
         }
     }
 
+    .modal-right .ship,
+    .modal-right.quick-view .add-to-cart-btn .bth-heart,
     .flat-accordion .flat-toggle,
     .divider {
         background: rgba(255, 255, 255, 0.1);
@@ -887,6 +920,10 @@ body.is_dark {
     .switcher__title,
     .sw-odd h3 {
         color: $color-primary;
+
+        &.current-item {
+            color: $color-hover;
+        }
     }
    
     .switcher-container {
@@ -931,12 +968,12 @@ body.is_dark {
     .form-group input:checked + label:before,
     .filter-checkbox input[type=checkbox]:checked + span::before,
     .filter-checkbox.style-2 input[type=checkbox]:checked + span::before {
-        background-image: url(/assets/icons/checked-white.svg);
+        background-image: url(./icons/checked-white.svg);
     }
 
     .filter-select-dropdown__menu {
         .filter-checkbox input[type=checkbox]:checked + span::before {
-            background-image: url(/assets/icons/checked.svg);
+            background-image: url(./icons/checked.svg);
         }
     }
 
