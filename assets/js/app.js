@@ -1,29 +1,33 @@
 /**
-  * headerFixed
-  * mobileNav
-  * filterToggle
-  * filterSidebarToggle
-  * colorDropdown
-  * selectDropdown
-  * coreDropdown
-  * parallax
-  * flatCounter
-  * tabs
-  * Mobile
-  * flatCounter
-  * gotop
-  * modalPopup
-  * wow
+  * Header Fixed
+  * Mobile Navigation
+  * Filter Toggle
+  * Filter Sidebar Toggle
+  * Color Dropdown
+  * Select Dropdown
+  * Dropdown
+  * Parallax
+  * Flat Counter
+  * Go Top
+  * Modal Popup
   * Preloader
-  * ratingInput
-  * flatAccordion
-  * filterResults
-  * passwordInput
-  * collapse
-  * carViewsChart
-  * searchModalToggle
-  * newsletterModal
-  * heartList
+  * Rating Input
+  * Accordion
+  * Get Filter Type From Name
+  * Format "All [field name]" Label
+  * Password Input 
+  * Collapse
+  * Car Views Chart
+  * Search Modal Toggle
+  * Hover Active Gallery
+  * Scroll Element
+  * Select Options
+  * Check Position
+  * Scroll Sidebar
+  * Newsletter Modal
+  * Compare Modal
+  * Heart List
+
 */
 
 (function ($) {
@@ -31,7 +35,8 @@
 
     var header = document.querySelector('.header');
 
-    // headerFixed
+    /* Header Fixed
+    ----------------------------------------------------------------------------*/
     var headerFixed = function () {
         if(!header) return;
 
@@ -62,7 +67,8 @@
         }
     };
 
-     // Mobile Navigation
+    /* Mobile Navigation
+    ----------------------------------------------------------------------------*/
     var mobileNav = function () {
         var mobile = window.matchMedia("(max-width: 1199px)");
         var headerRight = $(".main-nav-wrapper");
@@ -212,7 +218,8 @@
     }; 
    
 
-    // Filter Toggle
+    /* Filter Toggle
+    ----------------------------------------------------------------------------*/
     var filterToggle = function () {
         var $filterBtn = $("#filterToggle");
         var $advancedFilters = $("#advancedFilters");
@@ -240,7 +247,8 @@
         });
     };
 
-    // Filter Sidebar Toggle
+    /* Filter Sidebar Toggle
+    ----------------------------------------------------------------------------*/
     var filterSidebarToggle = function () {
         var $sidebar = $("#filterSidebar");
         var $toggleBtn = $("#filterSidebarToggle");
@@ -297,7 +305,8 @@
         }
     };
 
-    // Color Dropdown Component
+    /* Color Dropdown
+    ----------------------------------------------------------------------------*/
     var colorDropdown = function () {
         // Initialize each color dropdown
         $('.filter-color-dropdown').each(function() {
@@ -332,7 +341,8 @@
         });
     };
 
-    // Select Dropdown Component (with search and checkboxes)
+    /* Select Dropdown
+    ----------------------------------------------------------------------------*/
     var selectDropdown = function () {
         $('.filter-select-dropdown').each(function() {
             var $dropdown = $(this);
@@ -419,7 +429,8 @@
         });
     };
 
-    // Sort Dropdown
+    /* Dropdown
+    ----------------------------------------------------------------------------*/
     var coreDropdown = function () {
         var $dropdown = $(".core-dropdown");
         var $dropdownOptions = $(".core-dropdown__option");
@@ -498,7 +509,8 @@
         });
     };
 
-    // tabs
+    /* Tabs
+    ----------------------------------------------------------------------------*/
     var tabs = function(){
         $('.flat-tabs').each(function(){
             var $flatTabs = $(this);
@@ -519,7 +531,8 @@
         });
     };
 
-    // Mobile
+    /* Mobile
+    ----------------------------------------------------------------------------*/
     var isMobile = {
         Android: function () {
           return navigator.userAgent.match(/Android/i);
@@ -545,26 +558,25 @@
             isMobile.Windows()
           );
         },
-      };
-
-
+    };
 
     /* Parallax
-  ----------------------------------------------------------------------------*/
-  var parallax = function () {
-    $(".parallax").each(function () {
-      new SimpleParallax(this, {
-        delay: 0.5,
-        orientation: "up",
-        scale: 1.3,
-        transition: "cubic-bezier(0.2, 0.8, 1, 1)",
-        customContainer: "",
-        customWrapper: "",
-      });
-    });
-  };
+    ----------------------------------------------------------------------------*/
+    var parallax = function () {
+        $(".parallax").each(function () {
+        new SimpleParallax(this, {
+            delay: 0.5,
+            orientation: "up",
+            scale: 1.3,
+            transition: "cubic-bezier(0.2, 0.8, 1, 1)",
+            customContainer: "",
+            customWrapper: "",
+        });
+        });
+    };
 
-    // flatCounter
+    /* Flat Counter
+    ----------------------------------------------------------------------------*/
     var flatCounter = function () {
       if ($(document.body).hasClass("counter-scroll")) {
         var a = 0;
@@ -600,7 +612,8 @@
       }
     }; 
 
-    // Gotop
+    /* Go Top
+    ----------------------------------------------------------------------------*/
     var gotop = function () {
       if ($('div').hasClass('progress-wrap')) {
           var progressPath = document.querySelector('.progress-wrap path');
@@ -635,7 +648,8 @@
       }
     }
 
-   // modalPopup
+    /* Modal Popup
+    ----------------------------------------------------------------------------*/
     var modalPopup = function(openModalClass, bgModalClass, closeBtnClass, closeModalClass) {
         openModalClass = openModalClass || '.open-modal';
         bgModalClass = bgModalClass || '.bg-modal';
@@ -694,7 +708,8 @@
         });
     };
 
-    // Preloader
+    /* Preloader
+    ----------------------------------------------------------------------------*/
     var Preloader = function () {
       setTimeout(function () {
       $(".preload").fadeOut("slow", function () {
@@ -703,7 +718,8 @@
       }, 0);
     };
 
-    // Rating Input
+    /* Rating Input
+    ----------------------------------------------------------------------------*/
     var ratingInput = function () {
         // Helper function to convert icon paths based on dark mode
         function convertIconForDarkMode(iconPath) {
@@ -862,7 +878,8 @@
         });
     };
 
-    // flatAccordion
+    /* Accordion
+    ----------------------------------------------------------------------------*/
     var flatAccordion = function() {
         var args = {duration: 300};
         $('.flat-toggle .toggle-title.active').siblings('.toggle-content').show();
@@ -952,7 +969,8 @@
         });
     }; 
 
-    // getFilterTypeFromName
+    /* Get Filter Type From Name
+    ----------------------------------------------------------------------------*/
     function getFilterTypeFromName(name) {
         if (!name) return '';
         
@@ -980,6 +998,8 @@
         return name;
     }
 
+    /* Format "All [field name]" Label
+    ----------------------------------------------------------------------------*/
     function formatAllLabel(filterType) {
         if (!filterType) return '';
         
@@ -1013,9 +1033,8 @@
         return 'All ' + formatted;
     }
 
-    // Filter Results
-    
-
+    /* Password Input 
+    ----------------------------------------------------------------------------*/
     var passwordInput = function() {
         $('.password-input').each(function () {
             var $input = $(this);
@@ -1053,7 +1072,8 @@
         });
     }
     
-    // Collapse
+    /* Collapse
+    ----------------------------------------------------------------------------*/
     var collapse = function () {
         var isMobile = window.matchMedia("(max-width: 767px)");
         
@@ -1083,7 +1103,8 @@
         });
     };
     
-    // Car Views Chart
+    /* Car Views Chart
+    ----------------------------------------------------------------------------*/
     var carViewsChart = function () {
         var canvas = document.getElementById('carViewsChart');
         if (!canvas) return;
@@ -1519,7 +1540,8 @@
         window.addEventListener('resize', resizeCanvas);
     }; 
 
-    // Search Modal Toggle
+    /* Search Modal Toggle
+    ----------------------------------------------------------------------------*/
     var searchModalToggle = function () {
         var $searchToggle = $("#searchToggle");
         var $searchModal = $("#SearchModal");
@@ -1566,6 +1588,8 @@
         });
     };
 
+    /* Hover Active Gallery
+    ----------------------------------------------------------------------------*/
     var hoverActiveGallery = function () {
         if ($('.container-grid-gallery').length) {
             $(document).ready(function () {
@@ -1579,7 +1603,8 @@
         }
     }
 
-    // scrollElement - Smooth scroll to target element
+    /* Scroll Element
+    ----------------------------------------------------------------------------*/
     var scrollElement = function() {
         var elements = document.querySelectorAll('.scroll-element .element');
         
@@ -1616,6 +1641,8 @@
         });
     };
 
+    /* Select Options
+    ----------------------------------------------------------------------------*/
     var selectOptions = function () {
         $(".custom-select").each(function () {
             const $select = $(this);
@@ -1646,6 +1673,8 @@
         });
     };
 
+    /* Check Position
+    ----------------------------------------------------------------------------*/
     const checkPosition = (elemnt, menuSticky, headerHeight) => {
 
         const totalHeight = elemnt.offsetTop + elemnt.clientHeight - menuSticky.clientHeight - 100;
@@ -1667,7 +1696,8 @@
         }
     }
 
-
+    /* Scroll Sidebar
+    ----------------------------------------------------------------------------*/
     var scrollSidebar = function () {
         var desktop = window.matchMedia("(min-width: 767px)");
         var onScrollHandler = null;
@@ -1739,7 +1769,8 @@
         });
     }
 
-    // Newsletter Modal - Show after preload (only first time)
+    /* Newsletter Modal
+    ----------------------------------------------------------------------------*/
     var newsletterModal = function() {
         var hasSeenNewsletter = localStorage.getItem('suggest_subscribe');
         
@@ -1756,7 +1787,8 @@
         }
     };
 
-    // CompareModal: Handle remove items and empty state
+    /* Compare Modal
+    ----------------------------------------------------------------------------*/
     var compareModal = function() {
         // Function to update compare modal UI
         function updateCompareModalUI() {
@@ -1802,6 +1834,8 @@
         });
     };
 
+    /* Heart List
+    ----------------------------------------------------------------------------*/
     var heartList = function() {
         $(document).ready(function() {
             $(document).on('click', '.heart', function() {

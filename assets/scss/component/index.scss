@@ -1,25 +1,49 @@
 
+/*------------ Themes ---------------- */
 @use './themes.scss';
+/*------------ Button ---------------- */
 @use './button';
+/*------------ Menu ---------------- */
 @use './menu';
+/*------------ Header ---------------- */
 @use './header';
+/*------------ Swiper ---------------- */
 @use './swiper';
+/*------------ Page Title ---------------- */
 @use './page-title';
+/*------------ Tabs ---------------- */
 @use './tabs';
+/*------------ Box ---------------- */
 @use './box';
+/*------------ Grid ---------------- */
 @use './grid';
+/*------------ Blog ---------------- */
 @use './blog';
+/*------------ Footer ---------------- */
 @use './footer';
+/*------------ Widget ---------------- */
 @use './widget';
+/*------------ Spacing ---------------- */
 @use './spacing';
+/*------------ Section ---------------- */
 @use './section';
+/*------------ Modal ---------------- */
 @use './modal';
+/*------------ Progress ---------------- */
 @use './progress';
+/*------------ Breadcrumb ---------------- */
 @use './breadcrumb';
+/*------------ Dropdown ---------------- */
 @use './dropdown';
+/*------------ Sidebar ---------------- */
 @use './filter-sidebar';
+/*------------ Animate ---------------- */
 @forward './animate.min.scss';
+/*------------ Pagination ---------------- */
 @use './pagination.scss';
+/*------------ Accordion ---------------- */
 @use './flat-accordion.scss';
+/*------------ Shop ---------------- */
 @use './shop.scss';
+/*------------ Select ---------------- */
 @use './select.scss';    

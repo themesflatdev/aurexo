@@ -1,8 +1,54 @@
-// Assets
+/* ---------------------------------------------------------
+    * Name: Aurexo | Car Dealer, Rental & Listing HTML Template
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+    
+    * Reset css styles
+
+    * Components
+
+        * Themes
+        * Button
+        * Menu
+        * Header
+        * Swiper
+        * Page Title
+        * Tabs
+        * Box
+        * Grid
+        * Blog
+        * Footer
+        * Widget
+        * Spacing
+        * Section
+        * Modal
+        * Progress
+        * Breadcrumb
+        * Dropdown
+        * Sidebar
+        * Animate
+        * Pagination
+        * Accordion
+        * Shop
+        * Select
+        
+    * Inner Page
+
+    * Responsive
+ ------------------------------------------------------------------------------ */
+
+/*--------- Abstracts variable ---------- */
 @use './abstracts/index' as *;
+/*---------- Reset css styles ----------- */
 @use './reset' as *;
+/*------------ Components ---------------- */
 @use './component/index' as *;
+/*------------ Inner Page ---------------- */
 @use './inner-page' as *;
+/*-------------- Responsive ----------------- */
 @use './reponsive' as *;
 
 body {
